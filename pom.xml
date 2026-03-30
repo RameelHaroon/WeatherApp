@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>WheatherApp</artifactId>
+	<artifactId>WeatherApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>WheatherApp</name>
 	<description>Demo project for Spring Boot Wheather App using 3rd party API</description>
@@ -28,8 +28,6 @@
     </scm>
     <properties>
         <java.version>25</java.version>
-        <org.mapstruct.version>1.6.3</org.mapstruct.version>
-        <testcontainers.version>1.19.8</testcontainers.version>
     </properties>
     <dependencies>
         <dependency>
@@ -49,6 +47,11 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
@@ -58,7 +61,6 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
