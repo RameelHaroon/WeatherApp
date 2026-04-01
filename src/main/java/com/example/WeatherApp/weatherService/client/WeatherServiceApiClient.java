@@ -25,7 +25,6 @@ public class WeatherServiceApiClient {
     }
 
     public String getWeather(String location) {
-
         return restClient.get()
                 .uri("/{location}?unitGroup=metric&include=current&contentType=json&key={apiKey}",
                         location, apiKey)
